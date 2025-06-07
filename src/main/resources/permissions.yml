@@ -3,20 +3,20 @@ permissions:
     description: "Дозволяє використовувати плагін GrassFix"
     default: true
   grassfix.toggle:
-    description: "Allows toggling plugin mechanics"
+    description: "Дозволяє перемикати механіку плагінів"
     default: op
   grassfix.help:
-    description: "Allows viewing help"
+    description: "Дозволяє переглядати довідку"
     default: true
   grassfix.message:
-    description: "Allows toggling plugin messages"
+    description: "Дозволяє перемикати повідомлення плагінів"
     default: op
   grassfix.addbugblock:
-    description: "Allows adding blocks to bug blocks list"
+    description: "Дозволяє додавати блоки до списку блоків помилок"
     default: op
   grassfix.removebugblock:
-    description: "Allows removing blocks from bug blocks list"
+    description: "Дозволяє видаляти блоки зі списку блоків з помилками"
     default: op
   grassfix.reload:
-    description: "Allows reloading plugin configuration"
+    description: "Дозволяє перезавантажити конфігурацію плагіна"
     default: op
