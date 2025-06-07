@@ -1,6 +1,6 @@
 permissions:
   grassfix.use:
-    description: "Allows use of the GrassFix plugin"
+    description: "Дозволяє використовувати плагін GrassFix"
     default: true
   grassfix.toggle:
     description: "Allows toggling plugin mechanics"
