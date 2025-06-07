@@ -1,0 +1,22 @@
+permissions:
+  grassfix.use:
+    description: "Allows use of the GrassFix plugin"
+    default: true
+  grassfix.toggle:
+    description: "Allows toggling plugin mechanics"
+    default: op
+  grassfix.help:
+    description: "Allows viewing help"
+    default: true
+  grassfix.message:
+    description: "Allows toggling plugin messages"
+    default: op
+  grassfix.addbugblock:
+    description: "Allows adding blocks to bug blocks list"
+    default: op
+  grassfix.removebugblock:
+    description: "Allows removing blocks from bug blocks list"
+    default: op
+  grassfix.reload:
+    description: "Allows reloading plugin configuration"
+    default: op

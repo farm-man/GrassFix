@@ -1,0 +1,10 @@
+name: GrassFix
+version: '${version}'
+main: me.farmman.grassfix.GrassFix
+api-version: '1.16'
+commands:
+  gf:
+    description: Main command for GrassFix plugin
+    usage: /gf <subcommand>
+    permission: grassfix.use
+    aliases: [grassfix]
