@@ -15,18 +15,19 @@ public class GrassFix extends JavaPlugin {
     public void onEnable() {
         this.configManager = new ConfigManager(this);
 
-        getCommand("gf").setExecutor((CommandExecutor) new GrassFixCommand(this));
+        GrassFixCommand commandExecutor = new GrassFixCommand(this);
+        getCommand("gf").setExecutor(commandExecutor);
+        getCommand("gf").setTabCompleter(commandExecutor);
 
-        getServer().getPluginManager().registerEvents((Listener) new PlayerMovementListener(this), this);
-
+        getServer().getPluginManager().registerEvents(new PlayerMovementListener(this), this);
         configManager.loadConfigs();
 
-        getLogger().info("GrassFix plugin enabled!");
+        getLogger().info("GrassFix включений!");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("GrassFix plugin disabled!");
+        getLogger().info("GrassFix виключений!");
     }
 
     public ConfigManager getConfigManager() {

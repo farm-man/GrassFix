@@ -24,8 +24,9 @@ public class MessageUtils {
     }
 
     public static @NotNull String parseGradients(String message) {
-        return message;
+        return GradientParser.parseGradients(message);
     }
+
     public static void sendMessageList(CommandSender sender, List<String> messages) {
         if (messages != null) {
             for (String message : messages) {

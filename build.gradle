@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'me.farmman'
-version = '2.5.12'
+version = '2.5.14'
 
 repositories {
     mavenCentral()
@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-compileOnly "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT"
+    compileOnly "com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT"
 }
 
 def targetJavaVersion = 8

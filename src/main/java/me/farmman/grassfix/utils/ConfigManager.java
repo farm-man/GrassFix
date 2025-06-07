@@ -5,7 +5,6 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
 import java.util.List;
-import java.util.ArrayList;
 
 public class ConfigManager {
     private final JavaPlugin plugin;
@@ -20,7 +19,6 @@ public class ConfigManager {
     }
 
     public void loadConfigs() {
-        // Create or load config files
         plugin.saveDefaultConfig();
         config = plugin.getConfig();
 
@@ -98,6 +96,15 @@ public class ConfigManager {
 
     public void setMessagesEnabled(boolean enabled) {
         config.set("messages-enabled", enabled);
+        plugin.saveConfig();
+    }
+
+    public boolean isStuckMessageEnabled() {
+        return config.getBoolean("stuck-message-enabled", true);
+    }
+
+    public void setStuckMessageEnabled(boolean enabled) {
+        config.set("stuck-message-enabled", enabled);
         plugin.saveConfig();
     }
 }
